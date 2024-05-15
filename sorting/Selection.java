@@ -13,10 +13,10 @@ public class Selection {
 			arr[mini] = arr[i];
 			arr[i] = temp;
 			
-//			for(int x=0;x<n;x++) {	// This part is done only to show the working mechanism of the selection sort
-//				System.out.print(arr[x] + " ");
-//			}
-//			System.out.println();
+			for(int x=0;x<n;x++) {	// This part is done only to show the working mechanism of the selection sort
+				System.out.print(arr[x] + " ");
+			}
+			System.out.println();
 		}
 	}
 

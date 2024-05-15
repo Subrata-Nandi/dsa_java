@@ -1,4 +1,3 @@
-package array;
 /*
 7. Create a program with multi-dimensional List to store customer details (customerId,
 customerName, customerCity).
@@ -13,8 +12,8 @@ details as a List.
 order based on customer city.
 */
 
-/*
-package Array;
+
+package array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -33,7 +32,7 @@ class Customer {
 }
 
 public class Question7 {
-    List<Customer> customerList;
+    static List<Customer> customerList;
 
     public Question7(int size) {
         customerList = new ArrayList<>(size);
@@ -69,20 +68,23 @@ public class Question7 {
         return -1;
     }
 
-    public void sortCustomersByCity() {
-        Collections.sort(customerList, Comparator.comparing(customer -> customer.customerCity));
+    public void sortCustomersByName() {
+        Collections.sort(customerList, Comparator.comparing(customer -> customer.customerName));
     }
 
     public static void main(String[] args) {
     	Question7 customerDetails = new Question7(5);
         customerDetails.addCustomer(1, "Alice", "New York");
-        customerDetails.addCustomer(2, "Bob", "Los Angeles");
+        customerDetails.addCustomer(2, "David", "Los Angeles");
         customerDetails.addCustomer(3, "Charlie", "Chicago");
-        customerDetails.addCustomer(4, "David", "Houston");
+        customerDetails.addCustomer(4, "Bob", "Houston");
         customerDetails.addCustomer(5, "Emily", "San Francisco");
 
         // Sort customers by name
-        customerDetails.sortCustomersByCity();
+        customerDetails.sortCustomersByName();
+        
+        for(Customer customer: customerList)
+        	System.out.println("ID: " + customer.customerId + ", Name: " + customer.customerName + ", City: " + customer.customerCity);
 
         // Get customer details by name
         String searchName = "Bob";
@@ -97,4 +99,3 @@ public class Question7 {
         }
     }
 }
-*/

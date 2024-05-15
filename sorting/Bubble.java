@@ -17,10 +17,10 @@ public class Bubble {
 				break;
 			}
 			
-//			for(int x=0;x<n;x++) {	// This part is done only to show the working mechanism of the bubble sort
-//				System.out.print(arr[x] + " ");
-//			}
-//			System.out.println();
+			for(int x=0;x<n;x++) {	// This part is done only to show the working mechanism of the bubble sort
+				System.out.print(arr[x] + " ");
+			}
+			System.out.println();
 		}
 	}
 
